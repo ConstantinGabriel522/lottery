@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head section -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pagina Web Loteria IA</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <!-- Body section -->
+    <body>
+        <div id="lotteryBuyerSection">
+            <h1>Aceasta este aplicatia mea Web3 de tip loterie</h1>
+            <p>De aici poti cumpara un bilet</p>
+            <label for="adresaCumparator">Intrdu adresa ta de wallet (Metamask)</label><br>
+            <input type="text" name="adresaCumparator" id="">
+            <button>Cumpara bilet loterie</button>
+            <p>**********</p>
+        </div>
+
+        <div id="lotteryOwnerSection">
+            <h2>Sectiune rezervata pt Managerul Loteriei</h2>
+            <p>De aici poti configura o loterie</p>
+            <label for="adresaOwner">Introdu adresa ta de wallet (Metamask)</label><br>
+            <input type="text" name="adresaOwner" id="ownerLottery"><br>
+
+            <div id="newLotterySection">
+                <p>Completeaza detaliile unei noi loterii:</p><br>
+                <label for="Denumire">Denumire loterie</label>
+                <input type="text" name="Denumire" id=""><br>
+                <label for="Data">Data de inceput</label>
+                <input type="text" name="Data" id="lotteryStartDate"><br>
+                <label for="Pret">Pret bilet (WEI)</label>
+                <input type="text" name="Pret" id="lotteryTicketPrice"><br>
+                <button>Initializeaza o noua loterie</button><br>
+            </div>
+
+            <div id="extractWinnerSection">
+                <p>Daca exista deja o loterie, poti extrage castigatorii</p>
+                <button>Extrage castigatorii</button>
+                <p>**********</p>
+            </div>
+        </div>
+    </body>
+</html>
